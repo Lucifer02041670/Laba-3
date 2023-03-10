@@ -25,10 +25,10 @@ s = ''
 for i, word1 in enumerate(ListKey):
     if WordID == word1:
         print(ListValue[i].capitalize())
-    elif WordID == ListValue[i]:
-        print(ListKey[i].capitalize())
+        continue
 
-s = input('Синоним вам подходит Y/N(Д/Н): \n')
+s = input('Синоним вам подходит? Y/N(Д/Н): \n')
+
 with open('synonyms.txt', 'a') as f:
     if s == 'N' or s == 'Н':
         newSin = input("Введите новый синоним: \n")
