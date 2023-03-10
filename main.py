@@ -17,15 +17,13 @@ for i, word1 in enumerate(ListKey):
 for i, word1 in enumerate(ListValue):
     ListValue[i] = ListValue[i].lower()
 
-print(ListKey)
-print(ListValue)
-
 WordID = input().lower()
 s = ''
 for i, word1 in enumerate(ListKey):
     if WordID == word1:
         print(ListValue[i].capitalize())
         continue
+
 
 s = input('Синоним вам подходит? Y/N(Д/Н): \n')
 
